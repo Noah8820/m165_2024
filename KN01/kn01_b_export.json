@@ -6,5 +6,7 @@
   "Alter": 30,
   "Adresse": "123 Main Street",
   "Größe": 180.5,
-  "Geburtsdatum": "2007-01-18"
+  "Geburtsdatum":{ 
+    "$date": "2007-01-18T00:00:00Z" 
+  }
 }]
