@@ -18,7 +18,6 @@ const gewichtsklasse3Id = ObjectId();
 const gewichtsklasse4Id = ObjectId();
 const gewichtsklasse5Id = ObjectId();
 
-// Daten für die Collection 'mitglied'
 const mitglied1 = {
     _id: mitglied1Id,
     name: "Max Mustermann",
@@ -50,11 +49,9 @@ const mitglied5 = {
     alter: 35
 };
 
-// insertMany für die Collection 'mitglied'
 db.mitglied.insertMany([mitglied1, mitglied2, mitglied3, mitglied4, mitglied5]);
 print("Mitglied documents inserted");
 
-// Daten für die Collection 'trainer'
 const trainer1 = {
     _id: trainer1Id,
     name: "Peter Trainer",
@@ -86,15 +83,12 @@ const trainer5 = {
     alter: 37
 };
 
-// insertOne für die Collection 'trainer'
 db.trainer.insertOne(trainer1);
 print("Trainer document inserted");
 
-// insertMany für die Collection 'trainer'
 db.trainer.insertMany([trainer2, trainer3, trainer4, trainer5]);
 print("Trainer documents inserted");
 
-// Daten für die Collection 'gewichtsklassen'
 const gewichtsklasse1 = {
     _id: gewichtsklasse1Id,
     minweight: 50.0,
@@ -126,6 +120,5 @@ const gewichtsklasse5 = {
     name: "Ultra Schwergewicht"
 };
 
-// insertMany für die Collection 'gewichtsklassen'
 db.gewichtsklassen.insertMany([gewichtsklasse1, gewichtsklasse2, gewichtsklasse3, gewichtsklasse4, gewichtsklasse5]);
 print("Gewichtsklassen documents inserted");
