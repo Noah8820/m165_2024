@@ -1,3 +1,3 @@
-db.customers.drop()
-db.orders.drop()
-db.products.drop()
+db.gewichtsklassen.drop()
+db.trainer.drop()
+db.mitglied.drop()
