@@ -1,6 +1,6 @@
 use boxclub;
 
-const mitgliedToUpdate = ObjectId("60c72b2f9af1f9b3b4dcef57");
+var mitgliedToUpdate = ObjectId("60c72b2f9af1f9b3b4dcef57");
 db.mitglied.updateOne(
     { _id: mitgliedToUpdate },
     { $set: { alter: 26 } }
