@@ -11,7 +11,6 @@ db.gewichtsklassen.find({
     ]
 }).forEach(printjson);
 
-print("Weibliche Trainer über 35 Jahre:");
 db.trainer.find({
     geschlecht: "weiblich",
     alter: { $gt: 35 }
@@ -21,5 +20,4 @@ db.mitglied.find({ name: { $regex: ".*er.*" } }).forEach(printjson);
 
 db.gewichtsklassen.find({}, { _id: 1, name: 1, minweight: 1, maxweight: 1 }).forEach(printjson);
 
-print("Trainer ohne _id:");
 db.trainer.find({}, { _id: 0, name: 1, geschlecht: 1, alter: 1 }).forEach(printjson);

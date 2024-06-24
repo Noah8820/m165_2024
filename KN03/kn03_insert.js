@@ -50,7 +50,6 @@ const mitglied5 = {
 };
 
 db.mitglied.insertMany([mitglied1, mitglied2, mitglied3, mitglied4, mitglied5]);
-print("Mitglied documents inserted");
 
 const trainer1 = {
     _id: trainer1Id,
@@ -84,10 +83,8 @@ const trainer5 = {
 };
 
 db.trainer.insertOne(trainer1);
-print("Trainer document inserted");
 
 db.trainer.insertMany([trainer2, trainer3, trainer4, trainer5]);
-print("Trainer documents inserted");
 
 const gewichtsklasse1 = {
     _id: gewichtsklasse1Id,
@@ -121,4 +118,3 @@ const gewichtsklasse5 = {
 };
 
 db.gewichtsklassen.insertMany([gewichtsklasse1, gewichtsklasse2, gewichtsklasse3, gewichtsklasse4, gewichtsklasse5]);
-print("Gewichtsklassen documents inserted");
