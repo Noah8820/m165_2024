@@ -16,8 +16,11 @@ db.trainer.find({
     alter: { $gt: 35 }
 }).forEach(printjson);
 
-db.mitglied.find({ name: { $regex: ".*er.*" } }).forEach(printjson);
+// Findet alle Mitglieder mit Namen, die auf "Muster" enden
+db.mitglied.find({ name: { $regex: /Muster$/ } }).forEach(printjson);
 
-db.gewichtsklassen.find({}, { _id: 1, name: 1, minweight: 1, maxweight: 1 }).forEach(printjson);
+// Findet alle Trainer mit Namen, die mit "Susanne" beginnen
+db.trainer.find({ name: { $regex: /^Susanne/ } }).forEach(printjson);
 
-db.trainer.find({}, { _id: 0, name: 1, geschlecht: 1, alter: 1 }).forEach(printjson);
+// Findet alle Gewichtsklassen mit Namen, die "Schwergewicht" enthalten
+db.gewichtsklassen.find({ name: { $regex: /Schwergewicht/ } }).forEach(printjson);
