@@ -24,35 +24,50 @@ db.mitglied.insertMany([
         name: "Max Mustermann", 
         geschlecht: "männlich", 
         alter: 25,
-        gewichtsklasse: gewichtsklasse1Id
+        gewichtsklasse: {
+            _id: gewichtsklasse1Id,
+            name: "Leichtgewicht"
+        }
     },
     { 
         _id: mitglied2Id, 
         name: "Erika Musterfrau", 
         geschlecht: "weiblich", 
         alter: 30,
-        gewichtsklasse: gewichtsklasse2Id
+        gewichtsklasse: {
+            _id: gewichtsklasse2Id,
+            name: "Mittelgewicht"
+        }
     },
     { 
         _id: mitglied3Id, 
         name: "Hans Müller", 
         geschlecht: "männlich", 
         alter: 22,
-        gewichtsklasse: gewichtsklasse3Id
+        gewichtsklasse: {
+            _id: gewichtsklasse3Id,
+            name: "Schwergewicht"
+        }
     },
     { 
         _id: mitglied4Id, 
         name: "Anna Schmidt", 
         geschlecht: "weiblich", 
         alter: 28,
-        gewichtsklasse: gewichtsklasse4Id
+        gewichtsklasse: {
+            _id: gewichtsklasse4Id,
+            name: "Super Schwergewicht"
+        }
     },
     { 
         _id: mitglied5Id, 
         name: "Peter Fischer", 
         geschlecht: "männlich", 
         alter: 35,
-        gewichtsklasse: gewichtsklasse5Id
+        gewichtsklasse: {
+            _id: gewichtsklasse5Id,
+            name: "Ultra Schwergewicht"
+        }
     }
 ]);
 
@@ -60,32 +75,52 @@ db.trainer.insertOne({
     _id: trainer1Id, 
     name: "Peter Trainer", 
     geschlecht: "männlich", 
-    alter: 45
+    alter: 45,
+    gewichtsklasse: {
+        _id: gewichtsklasse1Id,
+        name: "Leichtgewicht"
+    }
 });
 db.trainer.insertOne({ 
     _id: trainer2Id, 
     name: "Susanne Coach", 
     geschlecht: "weiblich", 
-    alter: 38
+    alter: 38,
+    gewichtsklasse: {
+        _id: gewichtsklasse2Id,
+        name: "Mittelgewicht"
+    }
 });
 db.trainer.insertMany([
     { 
         _id: trainer3Id, 
         name: "Thomas Lehrer", 
         geschlecht: "männlich", 
-        alter: 50
+        alter: 50,
+        gewichtsklasse: {
+            _id: gewichtsklasse3Id,
+            name: "Schwergewicht"
+        }
     },
     { 
         _id: trainer4Id, 
         name: "Julia Ausbilder", 
         geschlecht: "weiblich", 
-        alter: 42
+        alter: 42,
+        gewichtsklasse: {
+            _id: gewichtsklasse4Id,
+            name: "Super Schwergewicht"
+        }
     },
     { 
         _id: trainer5Id, 
         name: "Michael Betreuer", 
         geschlecht: "männlich", 
-        alter: 37
+        alter: 37,
+        gewichtsklasse: {
+            _id: gewichtsklasse5Id,
+            name: "Ultra Schwergewicht"
+        }
     }
 ]);
 
