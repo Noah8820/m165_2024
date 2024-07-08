@@ -1,4 +1,4 @@
-use boxclub;
+use boxclub
 
 var mitglied1Id = new ObjectId();
 var mitglied2Id = new ObjectId();
@@ -24,50 +24,35 @@ db.mitglied.insertMany([
         name: "Max Mustermann", 
         geschlecht: "männlich", 
         alter: 25,
-        gewichtsklasse: {
-            _id: gewichtsklasse1Id,
-            name: "Leichtgewicht"
-        }
+        gewichtsklasse: gewichtsklasse1Id
     },
     { 
         _id: mitglied2Id, 
         name: "Erika Musterfrau", 
         geschlecht: "weiblich", 
         alter: 30,
-        gewichtsklasse: {
-            _id: gewichtsklasse2Id,
-            name: "Mittelgewicht"
-        }
+        gewichtsklasse: gewichtsklasse2Id
     },
     { 
         _id: mitglied3Id, 
         name: "Hans Müller", 
         geschlecht: "männlich", 
         alter: 22,
-        gewichtsklasse: {
-            _id: gewichtsklasse3Id,
-            name: "Schwergewicht"
-        }
+        gewichtsklasse: gewichtsklasse3Id
     },
     { 
         _id: mitglied4Id, 
         name: "Anna Schmidt", 
         geschlecht: "weiblich", 
         alter: 28,
-        gewichtsklasse: {
-            _id: gewichtsklasse4Id,
-            name: "Super Schwergewicht"
-        }
+        gewichtsklasse: gewichtsklasse4Id
     },
     { 
         _id: mitglied5Id, 
         name: "Peter Fischer", 
         geschlecht: "männlich", 
         alter: 35,
-        gewichtsklasse: {
-            _id: gewichtsklasse5Id,
-            name: "Ultra Schwergewicht"
-        }
+        gewichtsklasse: gewichtsklasse5Id
     }
 ]);
 
@@ -76,20 +61,14 @@ db.trainer.insertOne({
     name: "Peter Trainer", 
     geschlecht: "männlich", 
     alter: 45,
-    gewichtsklasse: {
-        _id: gewichtsklasse1Id,
-        name: "Leichtgewicht"
-    }
+    gewichtsklasse: gewichtsklasse1Id
 });
 db.trainer.insertOne({ 
     _id: trainer2Id, 
     name: "Susanne Coach", 
     geschlecht: "weiblich", 
     alter: 38,
-    gewichtsklasse: {
-        _id: gewichtsklasse2Id,
-        name: "Mittelgewicht"
-    }
+    gewichtsklasse: gewichtsklasse2Id
 });
 db.trainer.insertMany([
     { 
@@ -97,30 +76,21 @@ db.trainer.insertMany([
         name: "Thomas Lehrer", 
         geschlecht: "männlich", 
         alter: 50,
-        gewichtsklasse: {
-            _id: gewichtsklasse3Id,
-            name: "Schwergewicht"
-        }
+        gewichtsklasse: gewichtsklasse3Id
     },
     { 
         _id: trainer4Id, 
         name: "Julia Ausbilder", 
         geschlecht: "weiblich", 
         alter: 42,
-        gewichtsklasse: {
-            _id: gewichtsklasse4Id,
-            name: "Super Schwergewicht"
-        }
+        gewichtsklasse: gewichtsklasse4Id
     },
     { 
         _id: trainer5Id, 
         name: "Michael Betreuer", 
         geschlecht: "männlich", 
         alter: 37,
-        gewichtsklasse: {
-            _id: gewichtsklasse5Id,
-            name: "Ultra Schwergewicht"
-        }
+        gewichtsklasse: gewichtsklasse5Id
     }
 ]);
 
